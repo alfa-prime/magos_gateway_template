@@ -20,10 +20,10 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     openapi_tags=tags_metadata,
-    title="АПИ для браузерного расширения ЕВМИАС -> ОМС",
-    description="[CМП] АПИ для сбора данных из ЕВМИАС и заполнения формы ГИС ОМС. {gateway version}",
+    title="Шаблон приложения для работы со шлюзом ЕВМИАС",
+    description="Шаблон приложения для работы со шлюзом ЕВМИАС",
     lifespan=lifespan,
-    version="0.2.0"
+    version="0.0.1"
 )
 
 instrumentator = Instrumentator()
